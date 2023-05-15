@@ -75,7 +75,7 @@ const equaltrigger = document.querySelector(".equ")
         break;
     }
     console.log(finalResultado);
-document.getElementById("result").innerHTML = "finalResultado";
+document.getElementById("result").innerHTML = finalResultado;
   });
 };
 
