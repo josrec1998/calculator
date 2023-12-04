@@ -14,7 +14,7 @@ height: 50px;
 margin-bottom:10px;
 }
 
-.topset .result {
+.topset.result {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
