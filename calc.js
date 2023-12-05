@@ -36,7 +36,7 @@ operators.forEach((operator) => {
 
 const calculate = () => { 
 //calculate function - event lstr
-//updating the html
+//updating the html 
 const equaltrigger = document.querySelector(".equ")
   equaltrigger.addEventListener("click", () => {
     let operand1 = parseFloat(num1);
@@ -56,9 +56,8 @@ const equaltrigger = document.querySelector(".equ")
         case "/":
              finalResultado = operand1 / operand2;
                     break;
-     
-      default:
-        break;
+         default:
+           break;
     }
     console.log(finalResultado);
 document.getElementById("disp").innerText = finalResultado;
@@ -66,11 +65,27 @@ document.getElementById("disp").innerText = finalResultado;
 
 num1 = "";
     num2 = "";
-    currentOperator = "";
+    currentoperator = "";
   });
 };
 
 calculate();
 /* .result {finalResult;}
 console.log(finalResult);
-return finalResult; */
+return finalResult; 
+
+ case "ac":
+        finalResultado = 0;
+        break;
+      case "sign":
+        finalResultado = -1 * finalResultado;
+        break;
+      case "percentage":
+        finalResultado = 0.01 * finalResultado;
+        break;
+      case "point":
+        finalResultado = 0.1 * finalResultado;
+        break;
+    case "zero":
+        finalResultado = 0;
+        break;*/
