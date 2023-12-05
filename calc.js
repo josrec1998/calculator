@@ -76,6 +76,11 @@ const equaltrigger = document.querySelector(".equ")
     }
     console.log(finalResultado);
 document.getElementById("disp").innerText = finalResultado;
+ 
+
+num1 = "";
+    num2 = "";
+    currentOperator = "";
   });
 };
 
