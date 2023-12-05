@@ -15,12 +15,12 @@ const numbers = document.querySelectorAll(".number");
 numbers.forEach((number) => {
   number.addEventListener("click", (event) => {
    if(currentoperator != "") { 
-    num2 = event.target.value;
-    document.getElementById("disp").innerHTML = num2;
+    num2 = event.target.innerText;
+    document.getElementById("disp").innerText = num2;
    }
    else { 
-    num1 = event.target.value;
-    document.getElementById("disp").innerHTML = num1;
+    num1 = event.target.innerText;
+    document.getElementById("disp").innerText = num1;
 }
   });
 });
@@ -30,7 +30,7 @@ const operators = document.querySelectorAll(".operator");
 //function for final result gets parameters from number, only after first number knows what to do
 operators.forEach((operator) => {
   operator.addEventListener("click", (event) => { 
-   currentoperator =  event.target.id;
+   currentoperator =  event.target.innerText;
   });
 });
 
