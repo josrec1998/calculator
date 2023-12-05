@@ -15,11 +15,11 @@ const numbers = document.querySelectorAll(".number");
 numbers.forEach((number) => {
   number.addEventListener("click", (event) => {
    if(currentoperator != "") { 
-    num2 = event.target.innerText;
+    num2 = event.target.value;
     document.getElementById("disp").innerHTML = num2;
    }
    else { 
-    num1 = event.target.innerText;
+    num1 = event.target.value;
     document.getElementById("disp").innerHTML = num1;
 }
   });
