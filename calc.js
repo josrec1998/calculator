@@ -56,21 +56,7 @@ const equaltrigger = document.querySelector(".equ")
         case "/":
              finalResultado = operand1 / operand2;
                     break;
-      case "ac":
-        finalResultado = 0;
-        break;
-      case "sign":
-        finalResultado = -1 * finalResultado;
-        break;
-      case "percentage":
-        finalResultado = 0.01 * finalResultado;
-        break;
-      case "point":
-        finalResultado = 0.1 * finalResultado;
-        break;
-    case "zero":
-        finalResultado = 0;
-        break;
+     
       default:
         break;
     }
