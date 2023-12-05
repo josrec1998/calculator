@@ -14,7 +14,7 @@ const numbers = document.querySelectorAll(".number");
 
 numbers.forEach((number) => {
   number.addEventListener("click", (event) => {
-   if(currentoperator != "") { 
+   if(currentoperator !== "") { 
     num2 += event.target.innerHTML;
     document.getElementById("disp").innerText = num2;
    }
@@ -43,16 +43,16 @@ const equaltrigger = document.querySelector(".equ")
 
     switch (currentoperator) {
 
-        case "multiplication":
+        case "*":
             finalResultado = num1*num2;
             break;
-        case "subtraction":
+        case "-":
             finalResultado = num1-num2;
             break;
-        case "addition":
+        case "+":
                 finalResultado = num1+num2;
                 break;
-        case "division":
+        case "/":
              finalResultado = num1/num2;
                     break;
       case "ac":
