@@ -38,22 +38,23 @@ const calculate = () => {
 //calculate function - event lstr
 //updating the html
 const equaltrigger = document.querySelector(".equ")
-  equaltrigger.addEventListener("click", (event) => {
-
+  equaltrigger.addEventListener("click", () => {
+    let operand1 = parseFloat(num1);
+    let operand2 = parseFloat(num2);
 
     switch (currentoperator) {
 
         case "*":
-            finalResultado = num1*num2;
+            finalResultado = operand1 * operand2;
             break;
         case "-":
-            finalResultado = num1-num2;
+            finalResultado = operand1 - operand2;
             break;
         case "+":
-                finalResultado = num1+num2;
+                finalResultado = operand1 + operand2;
                 break;
         case "/":
-             finalResultado = num1/num2;
+             finalResultado = operand1 / operand2;
                     break;
       case "ac":
         finalResultado = 0;
@@ -74,7 +75,7 @@ const equaltrigger = document.querySelector(".equ")
         break;
     }
     console.log(finalResultado);
-document.getElementById("disp").innerHTML = finalResultado;
+document.getElementById("disp").innerHTML = parseFloat(finalResultado);
   });
 };
 
