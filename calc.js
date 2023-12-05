@@ -60,13 +60,13 @@ const equaltrigger = document.querySelector(".equ")
         finalResultado = 0;
         break;
       case "sign":
-        finalResultado = -1 * actResult;
+        finalResultado = -1 * finalResultado;
         break;
       case "percentage":
-        finalResultado = 0.01 * actResult;
+        finalResultado = 0.01 * finalResultado;
         break;
       case "point":
-        finalResultado = 0.1 * actResult;
+        finalResultado = 0.1 * finalResultado;
         break;
     case "zero":
         finalResultado = 0;
@@ -79,6 +79,7 @@ document.getElementById("disp").innerHTML = parseFloat(finalResultado);
   });
 };
 
+calculate();
 /* .result {finalResult;}
 console.log(finalResult);
 return finalResult; */
