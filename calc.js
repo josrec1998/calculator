@@ -8,7 +8,7 @@
 let num1 = "";
 let num2 = "";
 let currentoperator = "";
-let finalResultado = "";
+let finalResultado = 0;
 
 const numbers = document.querySelectorAll(".number");
 
