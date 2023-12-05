@@ -16,11 +16,11 @@ numbers.forEach((number) => {
   number.addEventListener("click", (event) => {
    if(currentoperator != "") { 
     num2 += event.target.innerText;
-    document.getElementById("result").innerHTML = "num2";
+    document.getElementById("disp").innerHTML = "num2";
    }
    else { 
     num1 += event.target.innerText;
-    document.getElementById("result").innerHTML = "num1";
+    document.getElementById("disp").innerHTML = "num1";
 }
   });
 });
@@ -30,8 +30,7 @@ const operators = document.querySelectorAll(".operator");
 //function for final result gets parameters from number, only after first number knows what to do
 operators.forEach((operator) => {
   operator.addEventListener("click", (event) => { 
-   currentoperator =  event.target.innerText;
-   document.getElementById("result").innerHTML = "currentoperator";
+   currentoperator =  event.target.id;
   });
 });
 
