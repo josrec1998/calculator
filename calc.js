@@ -8,7 +8,7 @@
 let num1 = "";
 let num2 = "";
 let currentoperator = "";
-let finalResultado = 0;
+let finalResultado = 0.0;
 
 const numbers = document.querySelectorAll(".number");
 
@@ -27,20 +27,17 @@ numbers.forEach((number) => {
 
 const operators = document.querySelectorAll(".operator");
 
+
+const calculate = () => { 
 //function for final result gets parameters from number, only after first number knows what to do
 operators.forEach((operator) => {
   operator.addEventListener("click", (event) => { 
    currentoperator =  event.target.innerText;
-  });
-});
-
-const calculate = () => { 
-//calculate function - event lstr
-//updating the html 
-const equaltrigger = document.querySelector(".equ")
-  equaltrigger.addEventListener("click", () => {
     let operand1 = parseFloat(num1);
     let operand2 = parseFloat(num2);
+console.log (currentoperator);
+console.log(operand1);
+console.log(operand1);
 
     switch (currentoperator) {
 
@@ -58,16 +55,18 @@ const equaltrigger = document.querySelector(".equ")
                     break;
          default:
            break;
-    }
+          
+    }     
     console.log(finalResultado);
 document.getElementById("disp").innerText = finalResultado;
  
-
+});
+});
 num1 = "";
     num2 = "";
     currentoperator = "";
-  });
-};
+  }
+
 
 calculate();
 /* .result {finalResult;}
